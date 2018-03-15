@@ -1,0 +1,21 @@
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px,ifr));
+    grid-auto-rows: 80px;
+    grid-auto-flow: dense;
+}
+li {
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: lightblue;
+    margin: 5px;
+}
+li:nth-child(2) {
+    grid-column: span 4;
+    background-color: lightgreen;
+}
+li:nth-child(4) {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-color: lightseagreen;
+}
